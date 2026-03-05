@@ -99,14 +99,18 @@ result = workflow.run(
 
 如果你觉得这个工具库有帮助，欢迎赞助！
 
-- [GitHub Sponsors](https://github.com/sponsors/zhuxunyu98) - 月赞助
-- [爱发电](https://afdian.net/a/zhuxunyu98) - 国内赞助
-- [Buy Me a Coffee](https://www.buymeacoffee.com/zhuxunyu98) - 一次性赞助
+### 微信赞助
+<img src="payment/wechat_qr.jpg" alt="微信收款码" width="200"/>
+
+### 支付宝赞助
+<img src="payment/alipay_qr.jpg" alt="支付宝收款码" width="200"/>
 
 **赞助福利：**
 - 🥉 ¥50+ ：优先回答问题
 - 🥈 ¥200+ ：1v1 咨询 30 分钟
 - 🥇 ¥500+ ：定制工具开发
+
+> 💡 赞助后请发邮件到 zhuxunyu98@gmail.com 说明需求，我会尽快联系你！
 
 ---
 
