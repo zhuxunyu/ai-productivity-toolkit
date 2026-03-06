@@ -1,0 +1,71 @@
+name: Auto Response
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  respond:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Respond to new issues
+      if: github.event_name == 'issues'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const issueNumber = context.issue.number;
+          const author = context.payload.issue.user.login;
+          
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: issueNumber,
+            body: `👋 @${author} 感谢你的反馈！
+            
+  我们会尽快查看你的 issue。通常在 24 小时内回复。
+  
+  在等待期间，你可以：
+  - 📖 查看 [文档](https://github.com/zhuxunyu98/ai-productivity-toolkit#readme)
+  - 🔍 搜索现有 issues 看是否已有类似问题
+  - ⭐ 给项目一个 Star 支持我们！
+  
+  **温馨提示**: 请确保你的 issue 包含足够的信息（环境、复现步骤、错误日志等），这样我们可以更快帮助你解决问题。
+  `
+          });
+    
+    - name: Respond to new PRs
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const prNumber = context.issue.number;
+          const author = context.payload.pull_request.user.login;
+          
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber,
+            body: `🎉 @${author} 感谢你的贡献！
+  
+  我们会尽快 review 你的 PR。
+  
+  **PR 检查清单**:
+  - [ ] 代码遵循项目规范
+  - [ ] 添加了必要的测试
+  - [ ] 更新了文档（如需要）
+  - [ ] 所有测试通过
+  
+  如果有任何问题，我们会在你的 PR 下留言。再次感谢！🙏
+  `
+          });
+          
+          // Add triage label
+          await github.rest.issues.addLabels({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber,
+            labels: ['triage']
+          });
