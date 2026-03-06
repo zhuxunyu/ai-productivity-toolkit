@@ -247,7 +247,7 @@ if __name__ == "__main__":
 export SMTP_SERVER=smtp.gmail.com
 export SMTP_PORT=587
 export SMTP_USERNAME=your@email.com
-export SMTP_PASSWORD=your_password
+export SMTP_PASSWORD=YOUR_SMTP_PASSWORD_HERE  # Replace with your actual password
 ```
 
 ---

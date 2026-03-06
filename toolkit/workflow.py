@@ -141,7 +141,9 @@ class AIWorkflow:
 
 # 使用示例
 if __name__ == "__main__":
-    workflow = AIWorkflow(api_key="demo-key")
+    # Note: Replace 'YOUR_API_KEY_HERE' with your actual API key
+    # Or set OPENAI_API_KEY environment variable
+    workflow = AIWorkflow(api_key="YOUR_API_KEY_HERE")
     
     # 示例 1：情感分析
     # result = workflow.run(
