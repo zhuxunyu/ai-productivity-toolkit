@@ -1,51 +1,54 @@
 # AI Productivity Toolkit
 
-> 🚀 **让 AI 成为你的超级助手 | 一站式 AI 效率工具库**
+> 🚀 **Make AI Your Super Assistant | All-in-One AI Efficiency Toolkit**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Stars](https://img.shields.io/github/stars/zhuxunyu98/ai-productivity-toolkit?style=social)](https://github.com/zhuxunyu98/ai-productivity-toolkit/stargazers)
 [![Sponsor](https://img.shields.io/badge/-Sponsor-f44336?logo=GitHub-Sponsors)](https://github.com/sponsors/zhuxunyu98)
 
-**English** | [中文](#中文文档)
+[🇨🇳 中文文档](README_CN.md)
 
 ---
 
-## 🎯 为什么需要这个工具库？
+## 🎯 Why This Toolkit?
 
-| 痛点 | 传统方式 | 使用本工具 |
-|------|----------|------------|
-| Prompt 写不好 | 反复尝试，效果差 | 自动优化，效果提升 10 倍 ⚡ |
-| 重复办公任务 | 手动处理，耗时 | 一键自动化，效率翻倍 🚀 |
-| 数据采集 | 手动复制，易出错 | 合法合规采集，结构化输出 📊 |
-| AI 工作流 | 多个工具切换 | 统一接口，无缝衔接 🔗 |
+| Pain Point | Traditional Way | With This Toolkit |
+|------------|-----------------|-------------------|
+| Poor Prompt Quality | Trial & error, bad results | Auto-optimized, 10x better ⚡ |
+| Repetitive Office Tasks | Manual processing, time-consuming | One-click automation, 2x efficiency 🚀 |
+| Data Collection | Manual copy-paste, error-prone | Legal & compliant, structured output 📊 |
+| AI Workflows | Switching between tools | Unified interface, seamless integration 🔗 |
 
 ---
 
-## ✨ 核心功能
+## ✨ Core Features
 
-### 🧠 Prompt 优化器
-> 写不出好 Prompt？让 AI 帮你优化！
+### 🧠 Prompt Optimizer
+> Can't write good Prompts? Let AI optimize for you!
 
 ```python
 from toolkit import PromptOptimizer
 
 optimizer = PromptOptimizer()
-optimized = optimizer.optimize("帮我写一个 Python 脚本")
+optimized = optimizer.optimize("Write a Python script for me")
 ```
 
-**优化前**: `"帮我写一个 Python 脚本"`
-**优化后**: 
+**Before**: `"Write a Python script for me"`
+
+**After**:
 ```
-你是一位专业的 Python 开发者。请编写一个 Python 脚本，要求：
-1. 功能明确，代码规范
-2. 包含必要的注释和文档
-3. 考虑边界情况和错误处理
-4. 提供使用示例
+You are a professional Python developer. Please write a Python script that:
+1. Has clear functionality and follows coding standards
+2. Includes necessary comments and documentation
+3. Considers edge cases and error handling
+4. Provides usage examples
+
+Specific requirements: [Your requirements]
 ```
 
-### 📊 Excel/Word/PDF 自动化
-> 批量处理办公文档，解放双手
+### 📊 Excel/Word/PDF Automation
+> Batch process office documents, free your hands
 
 ```python
 from toolkit import ExcelAutomation
@@ -55,8 +58,8 @@ excel.batch_convert(folder="input/", output_format="pdf")
 excel.merge_sheets(["file1.xlsx", "file2.xlsx"], output="merged.xlsx")
 ```
 
-### 🕷️ 数据采集框架
-> 合法合规的数据采集，结构化输出
+### 🕷️ Data Collection Framework
+> Legal and compliant data collection with structured output
 
 ```python
 from toolkit import DataCollector
@@ -66,13 +69,13 @@ data = collector.fetch(url="https://example.com", format="json")
 data.to_excel("output.xlsx")
 ```
 
-### 🔄 AI 工作流自动化
-> 一键完成复杂任务
+### 🔄 AI Workflow Automation
+> Complete complex tasks with one click
 
 ```python
 from toolkit import AIWorkflow
 
-workflow = AIWorkflow(api_key="your-key")
+workflow = AIWorkflow()
 result = workflow.run(
     task="analyze_sentiment",
     input="data/reviews.csv",
@@ -82,92 +85,92 @@ result = workflow.run(
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 方法 1: pip 安装（推荐）
+### Method 1: pip install (Recommended)
 ```bash
 pip install ai-productivity-toolkit
 ```
 
-### 方法 2: 源码安装
+### Method 2: Source installation
 ```bash
-# 克隆项目
+# Clone the repository
 git clone https://github.com/zhuxunyu98/ai-productivity-toolkit.git
 cd ai-productivity-toolkit
 
-# 安装依赖
+# Install dependencies
 pip install -r requirements.txt
 
-# 运行示例
+# Run example
 python examples/prompt_optimizer.py
 ```
 
-### 方法 3: Docker（即将支持）
+### Method 3: Docker (Coming Soon)
 ```bash
 docker run -it zhuxunyu98/ai-productivity-toolkit:latest
 ```
 
 ---
 
-## 📖 使用示例
+## 📖 Usage Examples
 
-### 示例 1: 优化你的 Prompt
+### Example 1: Optimize Your Prompt
 ```python
 from toolkit import PromptOptimizer
 
 optimizer = PromptOptimizer()
 
-# 优化写作任务
-prompt = "帮我写一篇文章"
+# Optimize writing task
+prompt = "Help me write an article"
 optimized = optimizer.optimize(prompt, task_type="writing")
 print(optimized)
 ```
 
-### 示例 2: 批量处理 Excel
+### Example 2: Batch Process Excel Files
 ```python
 from toolkit import ExcelAutomation
 
 excel = ExcelAutomation()
 
-# 批量转换为 PDF
+# Batch convert to PDF
 excel.batch_convert(folder="reports/", output_format="pdf")
 
-# 合并多个表格
+# Merge multiple sheets
 excel.merge_sheets(["q1.xlsx", "q2.xlsx", "q3.xlsx"], output="yearly.xlsx")
 ```
 
-### 示例 3: 数据采集 + 分析
+### Example 3: Data Collection + Analysis
 ```python
 from toolkit import DataCollector, AIWorkflow
 
-# 采集数据
+# Collect data
 collector = DataCollector()
 data = collector.fetch(url="https://example.com/products", format="json")
 
-# AI 分析
-workflow = AIWorkflow(api_key="your-key")
+# AI analysis
+workflow = AIWorkflow()
 result = workflow.run(task="analyze_trends", input=data)
 ```
 
-更多示例请查看 [examples/](examples/) 目录。
+More examples in [examples/](examples/) directory.
 
 ---
 
-## 📦 安装依赖
+## 📦 Installation
 
 ```bash
-# 基础依赖
+# Basic dependencies
 pip install -r requirements.txt
 
-# 可选：完整功能（包含所有扩展）
+# Optional: Full features (all extensions)
 pip install -r requirements-full.txt
 ```
 
 ---
 
-## 🔧 配置
+## 🔧 Configuration
 
-创建 `.env` 文件配置 API Keys：
+Create a `.env` file for API Keys:
 
 ```bash
 # OpenAI
@@ -176,88 +179,104 @@ OPENAI_API_KEY=your-openai-key
 # Anthropic (Claude)
 ANTHROPIC_API_KEY=your-anthropic-key
 
-# 其他配置
+# Other configurations
 LOG_LEVEL=INFO
 OUTPUT_DIR=./output
 ```
 
+> ⚠️ **Security Notice**: Never commit your `.env` file to version control!
+
 ---
 
-## 📊 性能对比
+## 📊 Performance Comparison
 
-| 任务 | 传统方式 | 本工具 | 提升 |
-|------|----------|--------|------|
-| Prompt 优化 | 30 分钟/次 | 30 秒/次 | **60 倍** ⚡ |
-| Excel 批量处理 | 2 小时/100 文件 | 5 分钟/100 文件 | **24 倍** 🚀 |
-| 数据采集 | 1 小时/网站 | 2 分钟/网站 | **30 倍** 📊 |
-| AI 工作流 | 手动切换工具 | 一键完成 | **10 倍** 🔗 |
+| Task | Traditional | This Toolkit | Improvement |
+|------|-------------|--------------|-------------|
+| Prompt Optimization | 30 min/time | 30 sec/time | **60x** ⚡ |
+| Excel Batch Processing | 2 hours/100 files | 5 min/100 files | **24x** 🚀 |
+| Data Collection | 1 hour/website | 2 min/website | **30x** 📊 |
+| AI Workflow | Manual tool switching | One-click completion | **10x** 🔗 |
 
 ---
 
 ## 🗺️ Roadmap
 
-### v1.0 (当前版本)
-- ✅ Prompt 优化器
-- ✅ Excel/Word/PDF 自动化
-- ✅ 数据采集框架
-- ✅ AI 工作流
+### v1.0 (Current)
+- ✅ Prompt Optimizer
+- ✅ Excel/Word/PDF Automation
+- ✅ Data Collection Framework
+- ✅ AI Workflows
 
-### v1.1 (开发中)
-- 🔄 MCP 协议支持
-- 🔄 多 LLM 提供商切换
-- 🔄 本地知识库/RAG
+### v1.1 (In Development)
+- 🔄 MCP Protocol Support
+- 🔄 Multi-LLM Provider Switching
+- 🔄 Local Knowledge Base / RAG
 
-### v2.0 (计划中)
-- ⏳ 图形界面 (GUI)
-- ⏳ 浏览器扩展
-- ⏳ 团队协作功能
+### v2.0 (Planned)
+- ⏳ Graphical User Interface (GUI)
+- ⏳ Browser Extension
+- ⏳ Team Collaboration Features
 
-查看完整路线图：[ROADMAP.md](ROADMAP.md)
+View full roadmap: [ROADMAP.md](ROADMAP.md)
 
 ---
 
-## 🤝 贡献
+## 🤝 Contributing
 
-欢迎贡献！无论是 Bug 报告、功能建议还是代码贡献！
+Contributions welcome! Bug reports, feature requests, and code contributions!
 
-### 快速贡献指南
+### Quick Contribution Guide
 
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### 需要帮助？
-- 📖 [贡献指南](CONTRIBUTING.md)
-- 💬 [Discord 社区](https://discord.gg/xxxxx) (筹备中)
+### Need Help?
+- 📖 [Contributing Guidelines](CONTRIBUTING.md)
+- 💬 [Discord Community](https://discord.gg/xxxxx) (Coming Soon)
 - 📧 Email: zhuxunyu98@gmail.com
 
 ---
 
-## 💰 赞助与支持
+## 💰 Sponsorship & Support
 
-如果这个项目对你有帮助，欢迎 Star ⭐ 或赞助支持！
+If this project helps you, please Star ⭐ or sponsor!
 
-### 赞助方式
+### Sponsorship Channels
 - [GitHub Sponsors](https://github.com/sponsors/zhuxunyu98)
 - [爱发电](https://afdian.com/a/zhuxunyu98)
 
-### 赞助福利
-| 档位 | 价格 | 福利 |
-|------|------|------|
-| 🥉 支持者 | ¥50/月 | 优先回答问题 |
-| 🥈 合作者 | ¥200/月 | 1v1 咨询 30 分钟 |
-| 🥇 赞助者 | ¥500/月 | 定制工具开发 |
+### Sponsor Benefits
+| Tier | Price | Benefits |
+|------|-------|----------|
+| 🥉 Supporter | ¥50/month | Priority support |
+| 🥈 Collaborator | ¥200/month | 30-min 1v1 consultation |
+| 🥇 Sponsor | ¥500/month | Custom tool development |
 
 ---
 
-## 📬 联系方式
+## 🔒 Security
+
+This toolkit follows security best practices:
+
+- ✅ No hardcoded API keys in source code
+- ✅ Environment variable configuration
+- ✅ `.env` file in `.gitignore`
+- ✅ Regular security audits
+- ✅ Dependency vulnerability scanning
+
+**Report a vulnerability**: zhuxunyu98@gmail.com
+
+---
+
+## 📬 Contact
 
 - 📧 Email: zhuxunyu98@gmail.com
-- 🐦 Twitter: [@zhuxunyu98](https://twitter.com/zhuxunyu98) (筹备中)
-- 💼 LinkedIn: [zhuxunyu98](https://linkedin.com/in/zhuxunyu98) (筹备中)
-- 📱 微信公众号：AI 效率研究所（筹备中）
+- 🐦 Twitter: [@zhuxunyu98](https://twitter.com/zhuxunyu98) (Coming Soon)
+- 💼 LinkedIn: [zhuxunyu98](https://linkedin.com/in/zhuxunyu98) (Coming Soon)
+- 📱 WeChat Official Account: AI Efficiency Lab (In Preparation)
 
 ---
 
@@ -267,15 +286,15 @@ OUTPUT_DIR=./output
 
 ---
 
-## 📄 许可证
+## 📄 License
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
+MIT License - See [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-**如果这个项目对你有帮助，请给个 Star ⭐！**
+**If this project helps you, please give it a Star ⭐!**
 
 Made with ❤️ by [zhuxunyu98](https://github.com/zhuxunyu98)
 

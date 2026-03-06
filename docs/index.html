@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zhuxunyu98 - AI Engineer & Open Source Developer</title>
+    <meta name="description" content="Personal blog and portfolio of zhuxunyu98 - AI Engineer, Open Source Developer, building tools to make AI more accessible and productive.">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #3b82f6;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--bg) 0%, var(--card-bg) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 60px 0;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 10px 40px rgba(37, 99, 235, 0.3);
+        }
+
+        .intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--text);
+            text-decoration: none;
+            padding: 8px 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 40px rgba(37, 99, 235, 0.2);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .project-card .tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .project-card .tag {
+            background: var(--bg);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border);
+        }
+
+        .project-card .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-card .links a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .project-card .links a:hover {
+            color: var(--accent);
+        }
+
+        /* Blog Posts */
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .blog-post {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .blog-post:hover {
+            border-color: var(--primary);
+        }
+
+        .blog-post h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .blog-post .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .blog-post p {
+            color: var(--text-muted);
+        }
+
+        .blog-post a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+
+        .stat-card .label {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro h1 {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <div class="avatar">Z</div>
+                <div class="intro">
+                    <h1>zhuxunyu98</h1>
+                    <p>AI Engineer & Open Source Developer</p>
+                    <p style="max-width: 600px; margin-bottom: 20px;">
+                        Building tools to make AI more accessible and productive. 
+                        Passionate about AI efficiency, automation, and open source.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/zhuxunyu98" target="_blank">🐙 GitHub</a>
+                        <a href="https://twitter.com/zhuxunyu98" target="_blank">🐦 Twitter</a>
+                        <a href="mailto:zhuxunyu98@gmail.com">📧 Email</a>
+                        <a href="https://linkedin.com/in/zhuxunyu98" target="_blank">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Stats -->
+        <section>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number" id="github-stars">-</div>
+                    <div class="label">GitHub Stars</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="github-repos">-</div>
+                    <div class="label">Repositories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="github-followers">-</div>
+                    <div class="label">Followers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">∞</div>
+                    <div class="label">Curiosity</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>🚀 Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI Productivity Toolkit</h3>
+                    <p>All-in-one AI efficiency toolkit with prompt optimization, document automation, data collection, and AI workflows.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Productivity</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/zhuxunyu98/ai-productivity-toolkit" target="_blank">📦 View Project</a>
+                        <a href="https://github.com/zhuxunyu98/ai-productivity-toolkit" target="_blank">⭐ Star</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>More Projects Coming Soon</h3>
+                    <p>Stay tuned for new open source projects focused on AI efficiency, automation, and developer tools.</p>
+                    <div class="tags">
+                        <span class="tag">Coming Soon</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Open Source</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/zhuxunyu98" target="_blank">🔍 Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section>
+            <h2>📝 Latest Posts</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <h3>Welcome to My Blog!</h3>
+                    <div class="meta">📅 March 7, 2026 · 👨‍💻 zhuxunyu98</div>
+                    <p>
+                        Welcome to my personal blog! Here I'll share insights about AI engineering, 
+                        open source development, and productivity tools. Stay tuned for more content!
+                    </p>
+                    <p><a href="#">Read more →</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section>
+            <h2>👨‍💻 About Me</h2>
+            <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 25px;">
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    Hi! I'm zhuxunyu98, an AI Engineer passionate about building tools that make AI 
+                    more accessible and productive for everyone.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    I believe in the power of open source and community-driven development. All my 
+                    projects are open source and I welcome contributions from everyone.
+                </p>
+                <p style="color: var(--text-muted);">
+                    When I'm not coding, you can find me exploring new AI technologies, contributing 
+                    to open source projects, or sharing knowledge with the community.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 zhuxunyu98. Made with ❤️ and lots of ☕.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/zhuxunyu98" style="color: var(--accent);">GitHub</a> ·
+                <a href="mailto:zhuxunyu98@gmail.com" style="color: var(--accent);">Email</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Fetch GitHub stats
+        async function fetchGitHubStats() {
+            try {
+                const response = await fetch('https://api.github.com/users/zhuxunyu98');
+                const data = await response.json();
+                
+                document.getElementById('github-stars').textContent = data.public_repos || '-';
+                document.getElementById('github-repos').textContent = data.public_repos || '-';
+                document.getElementById('github-followers').textContent = data.followers || '-';
+            } catch (error) {
+                console.error('Error fetching GitHub stats:', error);
+                document.getElementById('github-stars').textContent = '-';
+                document.getElementById('github-repos').textContent = '-';
+                document.getElementById('github-followers').textContent = '-';
+            }
+        }
+
+        fetchGitHubStats();
+    </script>
+</body>
+</html>
