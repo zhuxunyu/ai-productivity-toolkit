@@ -1,10 +1,14 @@
-name: Auto Response
+# ⚠️ TEMPORARILY DISABLED - To avoid notification spam
+# Uncomment when ready to enable auto-response
+
+name: Auto Response (Disabled)
 
 on:
-  issues:
-    types: [opened]
-  pull_request_target:
-    types: [opened]
+  workflow_dispatch:  # Manual trigger only
+#  issues:
+#    types: [opened]
+#  pull_request_target:
+#    types: [opened]
 
 permissions:
   issues: write
