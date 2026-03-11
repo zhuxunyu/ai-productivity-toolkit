@@ -162,7 +162,7 @@ python examples/prompt_optimizer_demo.py
 
 如果你觉得这个工具库有帮助，欢迎赞助支持！
 
-- **爱发电：** https://afdian.com/a/zhuxunyu98
+
 - **GitHub Sponsors：** 设置中
 
 所有赞助将用于：

@@ -115,7 +115,7 @@ result = workflow.run(
 如果你觉得这个工具库有帮助，欢迎赞助！
 
 - [GitHub Sponsors](https://github.com/sponsors/zhuxunyu98) - 月赞助
-- [爱发电](https://afdian.net/a/zhuxunyu98) - 国内赞助
+
 - [Buy Me a Coffee](https://www.buymeacoffee.com/zhuxunyu98) - 一次性赞助
 
 **赞助福利：**

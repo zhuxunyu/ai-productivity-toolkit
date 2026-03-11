@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Stars](https://img.shields.io/github/stars/zhuxunyu98/ai-productivity-toolkit?style=social)](https://github.com/zhuxunyu98/ai-productivity-toolkit/stargazers)
-[![Sponsor](https://img.shields.io/badge/-Sponsor-f44336?logo=GitHub-Sponsors)](https://github.com/sponsors/zhuxunyu98)
+[![Stars](https://img.shields.io/github/stars/zhuxunyu/ai-productivity-toolkit?style=social)](https://github.com/zhuxunyu/ai-productivity-toolkit/stargazers)
 
 [🇨🇳 中文文档](README_CN.md)
 
