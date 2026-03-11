@@ -128,7 +128,8 @@ print(optimized)
 ```
 
 【获取方式】
-GitHub 搜：zhuxunyu/ai-productivity-toolkit
+GitHub 搜："AI Productivity Toolkit"
+或者点我主页链接~
 完全免费，欢迎 Star！⭐
 
 ---
@@ -164,7 +165,8 @@ GitHub 搜：zhuxunyu/ai-productivity-toolkit
 3. AI 工作流 - 一键完成
 
 【工具地址】
-GitHub：zhuxunyu/ai-productivity-toolkit
+GitHub 搜："AI Productivity Toolkit"
+（主页有链接~）
 
 【使用心得】
 工具是手段，效率是目的
