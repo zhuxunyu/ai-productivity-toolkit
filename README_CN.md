@@ -9,6 +9,8 @@
 
 [🇺🇸 English Documentation](README.md)
 
+**📰 官方博客**: [硅基观察](https://zhuxunyu.github.io) | 最新文章：[对抗 FOMO 的年轻人](https://zhuxunyu.github.io/_posts/2026-03-14-对抗-fomo-的年轻人.md)
+
 ---
 
 ## 🎯 为什么需要这个工具库？
