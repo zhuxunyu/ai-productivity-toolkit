@@ -9,7 +9,7 @@
 
 [🇺🇸 English Documentation](README.md)
 
-**📰 官方博客**: [硅基观察](https://zhuxunyu.github.io) | 最新文章：[对抗 FOMO 的年轻人](https://zhuxunyu.github.io/_posts/2026-03-14-对抗-fomo-的年轻人.md)
+**📰 官方博客**: [硅基观察](https://zhuxunyu.github.io) | 最新文章：[藏了 30 年的秘密：好故事为什么总能刷屏？](https://zhuxunyu.github.io/_posts/2026-03-17-藏了 30 年的秘密.md)
 
 ---
 
