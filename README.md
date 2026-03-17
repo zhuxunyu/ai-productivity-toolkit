@@ -299,3 +299,15 @@ MIT License - See [LICENSE](LICENSE) file for details.
 Made with ❤️ by [zhuxunyu98](https://github.com/zhuxunyu98)
 
 </div>
+
+## 📝 新增工具：ADHD 自救指南
+
+- **添加**: 心理健康工具推荐清单
+- **来源**: [博客文章](https://zhuxunyu.github.io/_posts/2026-03-18-ADHD-自救指南.md)
+- **工具列表**:
+  - 两分钟法则
+  - 番茄工作法（ADHD 改良版）
+  - 身体倍增法
+  - 视觉化待办清单
+  - 即时奖励系统
+
