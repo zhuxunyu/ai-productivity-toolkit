@@ -13,6 +13,7 @@
 
 ## 📰 最新更新
 
+- **2026-03-21**: 发布 [Vibe Coding 是什么？为什么程序员都在晒代码？](https://zhuxunyu.github.io/2026/03/21/vibe-coding.html) - 深度解析程序员氛围感文化趋势
 - **2026-03-19**: 发布 [国产 AI 助手横向测评](https://zhuxunyu.github.io/2026/03/19/国产 AI 助手横向测评.html) - 深度对比 Kimi、文心一言、通义千问、豆包、智谱清言
 - **2026-03-17**: 新增 [中国 AI 助手 Prompt 模板](templates/chinese-ai-assistants-prompts.md) - 针对主流国产 AI 优化的 Prompt 集合
 
