@@ -13,6 +13,7 @@
 
 ## 📰 最新更新
 
+- **2026-03-22**: 新增 [终端 AI 助手集成指南](#-终端 ai 助手集成 2026-03-22 新增) - Gemini CLI、Browser-use、CrewAI 等热门工具推荐
 - **2026-03-21**: 发布 [Vibe Coding 是什么？为什么程序员都在晒代码？](https://zhuxunyu.github.io/2026/03/21/vibe-coding.html) - 深度解析程序员氛围感文化趋势
 - **2026-03-19**: 发布 [国产 AI 助手横向测评](https://zhuxunyu.github.io/2026/03/19/国产 AI 助手横向测评.html) - 深度对比 Kimi、文心一言、通义千问、豆包、智谱清言
 - **2026-03-17**: 新增 [中国 AI 助手 Prompt 模板](templates/chinese-ai-assistants-prompts.md) - 针对主流国产 AI 优化的 Prompt 集合
@@ -329,4 +330,27 @@ Made with ❤️ by [zhuxunyu98](https://github.com/zhuxunyu98)
   - 四大驱动：技术成熟、消费认知、产业协同、生态竞争
   - 未来趋势：AI 大模型集成、厨房机器人、健康管理、订阅制
 - **相关工具**: 智能家居选购指南（开发中）
+
+## 🤖 终端 AI 助手集成（2026-03-22 新增）
+
+- **添加**: AI Agent 终端工具推荐清单
+- **来源**: GitHub Trending + 热点调研
+- **推荐工具**:
+  - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** - Google 官方终端 AI 助手，直接在终端调用 Gemini 能力
+  - **[Browser Use](https://github.com/browser-use/browser-use)** - AI 浏览器自动化，让 AI 代理操作网页
+  - **[CrewAI](https://github.com/crewAIInc/crewAI)** - 多 Agent 协作框架，编排角色化 AI 代理
+  - **[Flowise](https://github.com/FlowiseAI/Flowise)** - 可视化 AI Agent 构建工具
+  - **[Mem0](https://github.com/mem0ai/mem0)** - AI Agent 通用记忆层
+- **快速开始**:
+  ```bash
+  # Gemini CLI（需 Node.js）
+  npx gemini-cli
+  
+  # Browser Use
+  pip install browser-use
+  
+  # CrewAI
+  pip install crewai
+  ```
+- **使用场景**: 代码生成、网页自动化、多 Agent 协作任务、研究分析
 
